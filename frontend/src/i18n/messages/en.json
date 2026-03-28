@@ -1,0 +1,289 @@
+{
+  "appName": "MyRoutes",
+  "language": "English",
+  "error": "Error",
+  "aboutView": {
+    "title": "About",
+    "tecnologies": "Technologies and libraries used",
+    "tools": "Tools used",
+    "viteEnvVarTitle": "Vite environment variables",
+    "developedBy": "Developed by",
+    "version": "Version",
+    "license": "License",
+    "viewOn": "View on"
+  },
+  "configurationView": {
+    "title": "Configuration",
+    "language": "Language",
+    "userConfiguration": {
+      "id": "User ID",
+      "email": "Email",
+      "name": "Name",
+      "password": "New Password",
+      "confirmPassword": "Repeat Password",
+      "createAt": "Create at",
+      "updateAt": "Update at",
+      "save": "Save",
+      "cancel": "Cancel",
+      "errorMsg": {
+        "nameRequired": "Name is required",
+        "nameMinLength": "The name should be at least 3 characters long",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "The password should be at least 6 characters long",
+        "passwordDifferent": "Passwords are different"
+      },
+      "formValidation": {
+        "errorTitle": "Form error",
+        "errorText": "Check the errors in the form",
+        "updateTitle": "Updated",
+        "updateText": "User updated successfully"
+      },
+      "cancellation": {
+        "title": "Are you sure you want to cancel the changes made?",
+        "text": "Changes made to the user will be lost",
+        "confirmButtonText": "Yes, abandon changes!",
+        "cancelButtonText": "Cancel"
+      }
+    }
+  },
+  "loginForm": {
+    "loginError": "Login error",
+    "emailAddress": "Email address",
+    "emailPlaceholder": "Email address",
+    "password": "Password",
+    "passwordPlaceholder": "Password",
+    "loginButton": "Login",
+    "rememberMe": "Remember me",
+    "registerLink": "New around here? Register",
+    "forgotPassword": "Forgot password?",
+    "loginOk": "Welcome!"
+  },
+  "registerForm": {
+    "title": "New user registration",
+    "name": "Name",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "confirmPassword": "Repeat Password",
+    "registerButton": "Register",
+    "cancelButton": "Cancel",
+    "confirmCreate": {
+      "title": "User created",
+      "text": "You will receive an activation email"
+    }
+  },
+  "recoverForm": {
+    "title": "Password Recover",
+    "emailAddress": "Email address",
+    "emailPlaceholder": "Email address",
+    "emailRequired": "Email is required",
+    "recoverButton": "Recuperar contraseña",
+    "cancelButton": "Cancelar",
+    "instruction": "You will receive an email with instructions to recover the password",
+    "emailValid": "Value is not a valid email address"
+  },
+  "navBar": {
+    "home": "Home",
+    "usersManagement": "Users",
+    "trackManagement": "Routes",
+    "configuration": "Configuration",
+    "about": "About",
+    "tooltip": {
+      "changeLanguage": "Change language",
+      "login": "Login",
+      "logout": "Logout",
+      "menu": "Menu"
+    },
+    "onLogout": {
+      "question": {
+        "title": "Are you sure you want to logout?",
+        "text": "Your user will be logged out. ",
+        "confirmButtonText": "Yes, logout!",
+        "cancelButtonText": "Cancel"
+      },
+      "success": {
+        "title": "You are logged out."
+      }
+    }
+  },
+  "userView": {
+    "title": "Users Management",
+    "addButton": {
+      "tooltip": "Add new user"
+    },
+    "userList": {
+      "title": "Users List"
+    },
+    "userCard": {
+      "title": "User Card",
+      "selectUser": "Select a user from the list or click the button to add a new user!",
+      "id": "User ID",
+      "name": "Name",
+      "email": "Email",
+      "rol": "Role",
+      "password": "New Password",
+      "confirmPassword": "Repeat Password",
+      "createAt": "Create at",
+      "updateAt": "Update at",
+      "active": "Active",
+      "save": "Save",
+      "cancel": "Cancel",
+      "roles": {
+        "admin": "Administrator",
+        "user": "User"
+      },
+      "cancellation": {
+        "title": "Are you sure you want to cancel the changes made?",
+        "text": "Changes made to the user will be lost",
+        "confirmButtonText": "Yes, abandon changes!",
+        "cancelButtonText": "Cancel"
+      },
+      "errorMsg": {
+        "nameRequired": "Name is required",
+        "nameMinLength": "The name should be at least 3 characters long",
+        "emailRequired": "Email is required",
+        "emailValid": "Value is not a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "The password should be at least 6 characters long",
+        "passwordDifferent": "Passwords are different"
+      },
+      "formValidation": {
+        "errorTitle": "Form error",
+        "errorText": "Check the errors in the form",
+        "createTitle": "Created",
+        "createText": "User created successfully",
+        "updateTitle": "Updated",
+        "updateText": "User updated successfully"
+      }
+    }
+  },
+  "trackView": {
+    "title": "Route Management",
+    "addButton": {
+      "tooltip": "Add a new route"
+    },
+    "trackList": {
+      "title": "Route List",
+      "noDescription": "No description",
+      "public": "Public route",
+      "readOnly": "Read only route"
+    },
+    "trackCard": {
+      "title": "Route Card",
+      "selectTrack": "Select a route from the list or click the button to add a new one!",
+      "id": "Route ID",
+      "public": "Public Route",
+      "name": "Name",
+      "description": "Description",
+      "uploadAt": "Upload date",
+      "createAt": "Creation date",
+      "updateAt": "Update date",
+      "save": "Save",
+      "selectFile": "Select file",
+      "uploadNewTrack": "Upload new route",
+      "cancel": "Cancel",
+      "exit": "Exit",
+      "delete": "Delete",
+      "anotherUserTrack": "Public route of another user!",
+      "cancellation": {
+        "title": "Are you sure you want to cancel the changes made?",
+        "text": "Changes made to the route will be lost",
+        "confirmButtonText": "Yes, abandon changes!",
+        "cancelButtonText": "Cancel"
+      },
+      "errorMsg": {
+        "nameRequired": "Name is needed",
+        "nameMinLength": "Name must be at least 3 characters long"
+      },
+      "formValidation": {
+        "errorTitle": "Error in the form",
+        "errorText": "Check the errors in the form"
+      },
+      "trackUpload": {
+        "uploadOk": "Route uploaded",
+        "uploadError": "Route upload error"
+      },
+      "trackUpdate": {
+        "updateOk": "Route is updated",
+        "updateError": "Error modifying the route"
+      },
+      "trackDelete": {
+        "deleteQuestion": "Are you sure you want to delete the route?",
+        "confirmDeleteButton": "Yes, delete route!",
+        "cancelDeleteButton": "Cancel",
+        "deleteSuccess": "Route deleted successfully"
+      }
+    }
+  },
+  "resetView": {
+    "title": "Reset Passwrod",
+    "password": "New Password",
+    "confirmPassword": "Repeat Password",
+    "resetButton": "Reset Password",
+    "cancelButton": "Cancel",
+    "formValidation": {
+      "errorTitle": "Check the errors"
+    },
+    "resetPassword": {
+      "errorTitle": "Failed to reset password",
+      "okTitle": "Password reset successful"
+    }
+  },
+  "activateView": {
+    "okMessage": "Account activated",
+    "errorMessage": "Error activating account"
+  },
+  "homeView": {
+    "routes": "Routes",
+    "trackUpload": "Route upload",
+    "trackList": "Routes list",
+    "mapView": {
+      "locating": "Locating...",
+      "myLocation": "My location",
+      "latitude": "Lat",
+      "longitude": "Lng",
+      "distance": "Distance",
+      "maxHeight": "Maximum height",
+      "minHeight": "Minimun height",
+      "zoomControl": {
+        "zoomInTitle": "Zoom in",
+        "zoomOutTitle": "Zoom out"
+      }
+    },
+    "sliderBox": {
+      "showToggleButtonTitle": "Show track list",
+      "hideToggleButtonTitle": "Hide track list",
+      "trackUpload": {
+        "selectFile": "Select file",
+        "uploadBtn": "Upload File",
+        "editInformation": "Edit route information",
+        "public": "Public route",
+        "name": "Name",
+        "description": "Description",
+        "creationDate": "File creation date",
+        "uploadOk": "Route uploaded",
+        "uploadError": "Route upload error"
+      },
+      "trackList":{
+        "visibleButton": "Visible route",
+        "noVisibleButton": "No visible route",
+        "public": "Public route"
+      }
+    }
+  },
+  "shared": {
+    "userSession": {
+      "sessionId": "User session ID",
+      "expireAt": "Sessión expire at",
+      "reject": "Reject",
+      "rejectButtonText": "Reject session"
+    }
+  },
+  "notAuthorized": {
+    "message": "You are not authorized!",
+    "goHomePage": "Go to homepage"
+  },
+  "notFound": {
+    "message": "Page not found!",
+    "goHomePage": "Go to homepage"
+  }
+}
