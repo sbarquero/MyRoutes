@@ -1,0 +1,84 @@
+:root {
+
+  // Colors
+  --color-background: rgba(246, 252, 248, 1);
+  --color-text: #31302e;
+
+  // Primary color
+  --primary-color: #198754;
+  --primary-color: rgba(25, 135, 84);
+  --primary-color-10: rgba(25, 135, 84, 0.1);
+  --primary-color-15: rgba(25, 135, 84, 0.15);
+  --primary-color-25: rgba(25, 135, 84, 0.25);
+  --primary-color-50: rgba(25, 135, 84, 0.5);
+  --primary-color-75: rgba(25, 135, 84, 0.75);
+
+  // Secondary color
+  --secondary-color: #0079DB;
+
+  // Danger color
+  --danger-color: #CB4B3D;
+
+  // Info color
+  --info-color: #D1FAE0;
+
+  // Option button
+  --btn-background-color: rgba(255, 255, 255, 0.7);
+  --btn-background-color-hover: rgba(255, 255, 255, 1);
+  --btn-shadow: 0px 1px 4px 3px rgba(0, 0, 0, 0.4);
+  --btn-shadow-hover: 0px 1px 5px 4px rgba(0, 0, 0, 0.4);
+  --btn-shadow-active: 0px 1px 4px 3px rgba(0, 0, 0, 0.4);
+
+  // Navbar
+  --navbar-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  --navbar-disabled-filter-background-color: rgba(45, 62, 51, 0.3);
+  --navbar-dropdown-menu-background-color: rgba(246, 252, 248, 0.95);
+  
+  // Default Container
+  --default-container-background-color: rgba(45, 62, 51, 0.75);
+  --default-container-filter-background-color: rgba(45, 62, 51, 0.75);
+  --default-container-card-background-color: rgba(246, 252, 248, 0.75);
+  --default-container-title-background-color: rgba(246, 252, 248, 0.65);
+
+  // List
+  --list-group-border-color: var(--primary-color-25);
+
+  // List item
+  --list-item-background-color-hover: rgb(222, 240, 230);
+
+  // SliderBox
+  --slider-box-background-color: 232, 239, 234;
+
+  // Dropdown
+  --dropdown-border-color: #D3D3D3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dropdown-item {
+  &:hover {
+    background-color: var(--list-item-background-color-hover);
+    cursor: pointer;
+  }
+  &:active {
+    color: var(--primary-color);
+  }
+}

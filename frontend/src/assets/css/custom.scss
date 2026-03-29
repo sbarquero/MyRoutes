@@ -1,0 +1,10 @@
+// // Imports Bootstrap customization
+@import "@/assets/css/bootstrap-custom.scss";
+
+/* Bootstrap customization */
+$primary: $primary-color;
+$secondary: $secondary-color;
+$info: $info-color;
+
+/* Includes all Bootstrap */
+@import "/node_modules/bootstrap/scss/bootstrap.scss";

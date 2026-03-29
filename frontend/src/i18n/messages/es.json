@@ -1,0 +1,289 @@
+{
+  "appName": "MyRoutes",
+  "language": "Español",
+  "error": "Error",
+  "aboutView": {
+    "title": "Acerca de",
+    "tecnologies": "Tecnologías y librerías empleadas",
+    "tools": "Herramientas empleadas",
+    "viteEnvVarTitle": "Variables de entorno de Vite",
+    "developedBy": "Desarrollado por",
+    "version": "Versión",
+    "license": "Licencia",
+    "viewOn": "Ver en"
+  },
+  "configurationView": {
+    "title": "Configuración",
+    "language": "Idioma",
+    "userConfiguration": {
+      "id": "ID Usuario",
+      "email": "Email",
+      "name": "Nombre",
+      "password": "Nueva Contraseña",
+      "confirmPassword": "Repite Contraseña",
+      "createAt": "Creado",
+      "updateAt": "Actualizado",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "errorMsg": {
+        "nameRequired": "Se necesita el nombre",
+        "nameMinLength": "El nombre debe tener 3 caracteres como mínimo",
+        "passwordRequired": "Se necesita la contraseña",
+        "passwordMinLength": "La contraseña debe tener al menos 6 caracteres",
+        "passwordDifferent": "Las contraseñas no son iguales"
+      },
+      "formValidation": {
+        "errorTitle": "Error en el formulario",
+        "errorText": "Revise los errores en el formulario",
+        "updateTitle": "Actualizado",
+        "updateText": "Usuario actualizado correctamente"
+      },
+      "cancellation": {
+        "title": "¿Seguro que desea cancelar los cambios realizados?",
+        "text": "Se perderán los cambios realizados al usuario",
+        "confirmButtonText": "Sí, abandonar cambios!",
+        "cancelButtonText": "Cancelar"
+      }
+    }
+  },
+  "loginForm": {
+    "loginError": "Error en login",
+    "emailAddress": "Dirección Email",
+    "emailPlaceholder": "Dirección Email",
+    "password": "Contraseña",
+    "passwordPlaceholder": "Contraseña",
+    "loginButton": "Iniciar sesión",
+    "rememberMe": "Recuérdame",
+    "registerLink": "¿Nuevo por aquí? Regístrate",
+    "forgotPassword": "¿Olvidaste la contraseña?",
+    "loginOk": "¡Bienvenido!"
+  },
+  "registerForm": {
+    "title": "Registro nuevo usuario",
+    "name": "Nombre",
+    "emailAddress": "Dirección Email",
+    "password": "Contraseña",
+    "confirmPassword": "Repite Contraseña",
+    "registerButton": "Registrarse",
+    "cancelButton": "Cancelar",
+    "confirmCreate": {
+      "title": "Usuario creado",
+      "text": "Recibirá un correo de activación"
+    }
+  },
+  "recoverForm": {
+    "title": "Recuperación de contraseña",
+    "emailAddress": "Dirección Email",
+    "emailPlaceholder": "Dirección Email",
+    "emailRequired": "Se necesita el email",
+    "recoverButton": "Recuperar contraseña",
+    "cancelButton": "Cancelar",
+    "instruction": "Recibirá un correo con intrucciones para recuperar la contraseña",
+    "emailValid": "El valor debe ser un email válido"
+  },
+  "navBar": {
+    "home": "Inicio",
+    "usersManagement": "Usuarios",
+    "trackManagement": "Rutas",
+    "configuration": "Configuración",
+    "about": "Acerca de",
+    "tooltip": {
+      "changeLanguage": "Cambiar idioma",
+      "login": "Iniciar sesión",
+      "logout": "Cerrar sesión",
+      "menu": "Menú"
+    },
+    "onLogout": {
+      "question": {
+        "title": "¿Seguro que quiere cerrar sesión?",
+        "text": "Su usuario será desconectado.",
+        "confirmButtonText": "Sí, cerrar sesión!",
+        "cancelButtonText": "Cancelar"
+      },
+      "success": {
+        "title": "Estás desconectado."
+      }
+    }
+  },
+  "userView": {
+    "title": "Gestión Usuarios",
+    "addButton": {
+      "tooltip": "Añade nuevo usuario"
+    },
+    "userList": {
+      "title": "Listado Usuarios"
+    },
+    "userCard": {
+      "title": "Ficha Usuario",
+      "selectUser": "¡Selecciona un usuario del listado o haz click en el botón para añadir un nuevo usuario!",
+      "id": "ID Usuario",
+      "name": "Nombre",
+      "email": "Email",
+      "rol": "Rol",
+      "password": "Nueva Contraseña",
+      "confirmPassword": "Repite Contraseña",
+      "createAt": "Creado",
+      "updateAt": "Actualizado",
+      "active": "Activo",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "roles": {
+        "admin": "Administrador",
+        "user": "Usuario"
+      },
+      "cancellation": {
+        "title": "¿Seguro que desea cancelar los cambios realizados?",
+        "text": "Se perderán los cambios realizados al usuario",
+        "confirmButtonText": "Sí, abandonar cambios!",
+        "cancelButtonText": "Cancelar"
+      },
+      "errorMsg": {
+        "nameRequired": "Se necesita el nombre",
+        "nameMinLength": "El nombre debe tener 3 caracteres como mínimo",
+        "emailRequired": "Se necesita el email",
+        "emailValid": "El valor debe ser un email válido",
+        "passwordRequired": "Se necesita la contraseña",
+        "passwordMinLength": "La contraseña debe tener al menos 6 caracteres",
+        "passwordDifferent": "Las contraseñas no son iguales"
+      },
+      "formValidation": {
+        "errorTitle": "Error en el formulario",
+        "errorText": "Revise los errores en el formulario",
+        "createTitle": "Creado",
+        "createText": "Usuario creado correctamente",
+        "updateTitle": "Actualizado",
+        "updateText": "Usuario actualizado correctamente"
+      }
+    }
+  },
+  "trackView": {
+    "title": "Gestión de Rutas",
+    "addButton": {
+      "tooltip": "Añade una nueva ruta"
+    },
+    "trackList": {
+      "title": "Listado de Rutas",
+      "noDescription": "Sin descripción",
+      "public": "Ruta Pública",
+      "readOnly": "Ruta de solo lectura"
+    },
+    "trackCard": {
+      "title": "Ficha de la Ruta",
+      "selectTrack": "¡Selecciona una ruta del listado o haz click en el botón para añadir una nueva!",
+      "id": "ID Ruta",
+      "public": "Ruta Pública",
+      "name": "Nombre",
+      "description": "Descripción",
+      "uploadAt": "Fecha subida",
+      "createAt": "Fecha creación",
+      "updateAt": "Última actualización",
+      "save": "Guardar",
+      "selectFile": "Seleccionar fichero",
+      "uploadNewTrack": "Subir nueva ruta",
+      "cancel": "Cancelar",
+      "exit": "Salir",
+      "delete": "Borrar",
+      "anotherUserTrack": "¡Ruta pública de otro usuario!",
+      "cancellation": {
+        "title": "¿Seguro que desea cancelar los cambios realizados?",
+        "text": "Se perderán los cambios realizados a la ruta",
+        "confirmButtonText": "Sí, abandonar cambios!",
+        "cancelButtonText": "Cancelar"
+      },
+      "errorMsg": {
+        "nameRequired": "Se necesita el nombre",
+        "nameMinLength": "El nombre debe tener 3 caracteres como mínimo"
+      },
+      "formValidation": {
+        "errorTitle": "Error en el formulario",
+        "errorText": "Revise los errores en el formulario"
+      },
+      "trackUpload": {
+        "uploadOk": "Ruta subida",
+        "uploadError": "Error en la subida de la ruta"
+      },
+      "trackUpdate": {
+        "updateOk": "Ruta modificada",
+        "updateError": "Error al modificar la ruta"
+      },
+      "trackDelete": {
+        "deleteQuestion": "¿Seguro que desea borrar la ruta?",
+        "confirmDeleteButton": "Sí, borrar ruta!",
+        "cancelDeleteButton": "Cancelar",
+        "deleteSuccess": "Ruta borrada correctamente"
+      }
+    }
+  },
+  "resetView": {
+    "title": "Restablecer contraseña",
+    "password": "Nueva Contraseña",
+    "confirmPassword": "Repite Contraseña",
+    "resetButton": "Restablecer contraseña",
+    "cancelButton": "Cancelar",
+    "formValidation": {
+      "errorTitle": "Revise los errores"
+    },
+    "resetPassword": {
+      "errorTitle": "Error al restablecer la contraseña",
+      "okTitle": "Contraseña restablecida correctamente"
+    }
+  },
+  "activateView": {
+    "okMessage": "Cuenta activada",
+    "errorMessage": "Error al activar la cuenta"
+  },
+  "homeView": {
+    "routes": "Rutas",
+    "trackUpload": "Subida ruta",
+    "trackList": "Listado rutas",
+    "mapView": {
+      "locating": "Localizando...",
+      "myLocation": "Mi localización",
+      "latitude": "Lat",
+      "longitude": "Lng",
+      "distance": "Distancia",
+      "maxHeight": "Altura máxima",
+      "minHeight": "Altura mínima",
+      "zoomControl": {
+        "zoomInTitle": "Ampliar",
+        "zoomOutTitle": "Disminuir"
+      }
+    },      
+    "sliderBox": {
+      "showToggleButtonTitle": "Mostrar listado rutas",
+      "hideToggleButtonTitle": "Ocultar listado rutas",
+      "trackUpload": {
+        "selectFile": "Seleccionar fichero",
+        "uploadBtn": "Subir fichero",
+        "editInformation": "Editar información ruta",
+        "public": "Ruta pública",
+        "name": "Nombre",
+        "description": "Descripción",
+        "creationDate": "Fecha creación fichero",
+        "uploadOk": "Ruta subida",
+        "uploadError": "Error en la subida de la ruta"
+      },
+      "trackList":{
+        "visibleButton": "Ruta visible",
+        "noVisibleButton": "Ruta no visible",
+        "public": "Ruta Pública"
+      }
+    }
+  },
+  "shared": {
+    "userSession": {
+      "sessionId": "ID Sesión Usuario",
+      "expireAt": "Sesión expira",
+      "reject": "Desconectar",
+      "rejectButtonText": "Cierra sesión"
+    }
+  },
+  "notAuthorized": {
+    "message": "¡No estas autorizado!",
+    "goHomePage": "Ir a la página de inicio"
+  },
+  "notFound": {
+    "message": "¡Página no encontrada!",
+    "goHomePage": "Ir a la página de inicio"
+  }
+}

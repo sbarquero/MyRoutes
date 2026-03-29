@@ -1,0 +1,680 @@
+tags:
+- name: Auth
+  description: Everything about authorizations
+- name: Configuration
+  description: Allows a user to change their settings
+- name: Track
+  description: Everything about tracks/routes
+- name: User
+  description: Operations about Users
+
+paths:
+# [POST] auth/register
+  /auth/register:
+    post:
+      tags:
+      - Auth
+      summary: User registration
+      parameters:
+      - name: body
+        in: body
+        description: Register for a new user
+        required: true
+        schema:
+          $ref: '#/definitions/RegisterDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/login
+  /auth/login:
+    post:
+      tags:
+      - Auth
+      summary: User login
+      parameters:
+      - name: body
+        in: body
+        description: User login
+        required: true
+        schema:
+          $ref: '#/definitions/LoginDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/logout
+  /auth/logout:
+    post:
+      tags:
+      - Auth
+      summary: User logout
+      parameters:
+      - name: body
+        in: body
+        description: User logout
+        required: true
+        schema:
+          $ref: '#/definitions/LogoutDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/refresh
+  /auth/refresh:
+    post:
+      tags:
+      - Auth
+      summary: Refresh token
+      parameters:
+      - name: body
+        in: body
+        description: Refresh token
+        required: true
+        schema:
+          $ref: '#/definitions/RefreshDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/reject
+  /auth/reject:
+    post:
+      tags:
+      - Auth
+      summary: Reject user session
+      parameters:
+      - name: body
+        in: body
+        description: Reject user session
+        required: true
+        schema:
+          $ref: '#/definitions/RejectDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/recover
+  /auth/recover:
+    post:
+      tags:
+      - Auth
+      summary: Recover user password
+      parameters:
+      - name: body
+        in: body
+        description: Recover user password
+        required: true
+        schema:
+          $ref: '#/definitions/RecoverPasswordDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/reset-password
+  /auth/reset-password:
+    post:
+      tags:
+      - Auth
+      summary: Reset user password
+      parameters:
+      - name: body
+        in: body
+        description: Reset user password
+        required: true
+        schema:
+          $ref: '#/definitions/ResetPasswordDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] auth/activate-user
+  /auth/activate-user:
+    post:
+      tags:
+      - Auth
+      summary: Activate user account
+      parameters:
+      - name: body
+        in: body
+        description: Activate user account
+        required: true
+        schema:
+          $ref: '#/definitions/ActivateUserDto'
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+
+# [GET] configuration/id
+  /configuration/{id}:
+    get:
+      tags:
+      - Configuration
+      summary: Gets user configuration by Id
+      parameters:
+      - name: id
+        in: path
+        description: User Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [PUT] configuration/id
+    put:
+      tags:
+      - Configuration
+      summary: Update user configuration by Id
+      parameters:
+      - name: id
+        in: path
+        description: User Id
+        required: true
+      - name: body
+        in: body
+        description: user Data
+        required: true
+        schema:
+          $ref: '#/definitions/UpdateConfigurationDto'
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+
+# [GET] track
+  /track:
+    get:
+      tags:
+      - Track
+      summary: List all tracks/routes
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] track
+    post:
+      tags:
+      - Track
+      summary: Create a new track/route
+      parameters:
+      - name: body
+        in: body
+        description: Track Data
+        required: true
+        schema:
+          $ref: '#/definitions/CreateTrackDto'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [GET] track/id
+  /track/{id}:
+    get:
+      tags:
+      - Track
+      summary: Get track/route by Id
+      parameters:
+      - name: id
+        in: path
+        description: Track Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [PUT] track/id
+    put:
+      tags:
+      - Track
+      summary: Update an existing track/route 
+      parameters:
+      - name: id
+        in: path
+        description: Track Id
+        required: true
+      - name: body
+        in: body
+        description: Track Data
+        required: true
+        schema:
+          $ref: '#/definitions/UpdateTrackDto'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [DELETE] track/id
+    delete:
+      tags:
+      - Track
+      summary: Delete a track/route by Id
+      parameters:
+      - name: id
+        in: path
+        description: Track Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [GET] track/public
+  /track/public:
+    get:
+      tags:
+      - Track
+      summary: List all public tracks/routes
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [GET] track/public/id
+  /track/public/{id}:
+    get:
+      tags:
+      - Track
+      summary: Get public track/route by Id
+      parameters:
+      - name: id
+        in: path
+        description: Track Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [GET] track/user/id
+  /track/user/{id}:
+    get:
+      tags:
+      - Track
+      summary: List all tracks/routes by user Id
+      parameters:
+      - name: id
+        in: path
+        description: User Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+
+# [GET] user
+  /user:
+    get:
+      tags:
+      - User
+      summary: Find all Users
+      responses:
+        200:
+          description: 'OK'
+        500:
+          description: 'Server Error'
+
+# [POST] user
+    post:
+      tags:
+      - User
+      summary: Add a User
+      parameters:
+      - name: body
+        in: body
+        description: user Data
+        required: true
+        schema:
+          $ref: '#/definitions/CreateUserDto'
+      responses:
+        201:
+          description: 'Created'
+        400:
+          description: 'Bad Request'
+        409:
+          description: 'Conflict'
+        500:
+          description: 'Server Error'
+
+# [GET] user/id
+  /user/{id}:
+    get:
+      tags:
+      - User
+      summary: Find an User by Id
+      parameters:
+      - name: id
+        in: path
+        description: User Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [PUT] user/id
+    put:
+      tags:
+      - User
+      summary: Update a User by Id
+      parameters:
+      - name: id
+        in: path
+        description: user Id
+        required: true
+      - name: body
+        in: body
+        description: user Data
+        required: true
+        schema:
+          $ref: '#/definitions/UpdateUserDto'
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# [DELETE] user/id
+    delete:
+      tags:
+      - User
+      summary: Delete a User By Id
+      parameters:
+      - name: id
+        in: path
+        description: user Id
+        required: true
+      responses:
+        200:
+          description: 'OK'
+        400:
+          description: 'Bad Request'
+        404:
+          description: 'Not Found'
+        500:
+          description: 'Server Error'
+
+# definitions
+definitions:
+  RegisterDto:
+    type: object
+    required:
+        - name
+        - email
+        - password
+    properties:
+      name:
+        type: string
+        description: user Name
+      email:
+        type: string
+        description: user Email
+      password:
+        type: string
+        description: user Password
+  LoginDto:
+    type: object
+    required:
+        - email
+        - password
+    properties:
+      email:
+        type: string
+        description: user Email
+      password:
+        type: string
+        description: user Password
+  LogoutDto:
+    type: object
+    required:
+        - userId
+        - sessionId
+        - refreshToken
+    properties:
+      userId:
+        type: string
+        description: user Id
+      sessionId:
+        type: string
+        description: session Id
+      refreshToken:
+        type: string
+        description: refresh token
+  RefreshDto:
+    type: object
+    required:
+        - userId
+        - sessionId
+        - refreshToken
+    properties:
+      userId:
+        type: string
+        description: user Id
+      sessionId:
+        type: string
+        description: session Id
+      refreshToken:
+        type: string
+        description: refresh token
+  RejectDto:
+    type: object
+    required:
+        - userId
+        - sessionId
+        - refreshToken
+    properties:
+      userId:
+        type: string
+        description: user Id
+      sessionId:
+        type: string
+        description: session Id
+      refreshToken:
+        type: string
+        description: refresh token
+  RecoverPasswordDto:
+    type: object
+    required:
+        - email
+    properties:
+      email:
+        type: string
+        description: user email
+  ResetPasswordDto:
+    type: object
+    required:
+        - token
+        - password
+    properties:
+      token:
+        type: string
+        description: token
+      password:
+        type: string
+        description: user Password
+  ActivateUserDto:
+    type: object
+    required:
+        - token
+    properties:
+      token:
+        type: string
+        description: token
+
+  UpdateConfigurationDto:
+    type: object
+    required:
+    properties:
+      name:
+        type: string
+        description: user Name
+      password:
+        type: string
+        description: user Password
+
+  CreateTrackDto:
+    type: object
+    required:
+        - name
+        - description
+        - userId
+        - isPublic
+        - fileName
+        - createAt
+    properties:
+      name:
+        type: string
+        description: track Name
+      description:
+        type: string
+        description: track Description
+      userId:
+        type: string
+        description: user Id
+      isPublic:
+        type: boolean
+        description: track is Public
+      fileName:
+        type: string
+        description: track File Name
+      createAt:
+        type: date
+        description: track Creation date
+  UpdateTrackDto:
+    type: object
+    required:
+        - name
+        - description
+        - isPublic
+        - createAt
+    properties:
+      name:
+        type: string
+        description: track Name
+      description:
+        type: string
+        description: track Description
+      isPublic:
+        type: boolean
+        description: track is Public
+      createAt:
+        type: date
+        description: track Creation date
+
+  CreateUserDto:
+    type: object
+    required:
+        - name
+        - email
+        - password
+        - rol
+        - active
+    properties:
+      name:
+        type: string
+        description: user Name
+      email:
+        type: string
+        description: user Email
+      password:
+        type: string
+        description: user Password
+      rol:
+        type: string
+        description: user Rol ('admin' or 'user')
+      active:
+        type: boolean
+        description: user is Active
+  UpdateUserDto:
+    type: object
+    required:
+    properties:
+      name:
+        type: string
+        description: user Name
+      password:
+        type: string
+        description: user Password
+      rol:
+        type: string
+        description: user Rol ('admin' or 'user')
+      active:
+        type: boolean
+        description: user is Active
+
+schemes:
+ - https
+ - http
